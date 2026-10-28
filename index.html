@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='22'%20fill='%239d5327'/%3E%3Ctext%20x='50'%20y='70'%20font-size='58'%20text-anchor='middle'%20fill='%23faf6ef'%20font-family='serif'%3E%E9%BA%A6%3C/text%3E%3C/svg%3E">
+<title>パン工房 麦の窯｜三軒茶屋の焼きたてパン店</title>
+<meta name="description" content="三軒茶屋の小さなパン工房「麦の窯」。毎朝5時に窯に火を入れ、北海道産小麦100%のパンを焼きたてだけ売ります。">
+
+<!--
+  ============================================================
+  Studio Louis LP Kit / 01-shop-service
+  カスタマイズ箇所は README.md の手順に従ってください。
+  置換が必要な主な箇所:
+    - 店名(protected token): <span class="u-nowrap">内の「麦の窯」
+    - <title>、meta description、faviconの文字と色
+    - 数値+単位トークン: 「05:00」「100%」「0種」「12種」「20本」等(u-nowrap必須)
+    - CTAのhref、SNS・問い合わせ先、footerの事業者名とcopyright
+    - 見出しの改行: u-br--pc / u-br--sp はdesktop/mobile別の改行計画。
+      片方の改行をもう片方へ流用しないこと(QA_CHECKLIST参照)
+    - 色・フォント: css/style.css の :root トークン一括変更可
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <p class="site-header__brand"><span class="u-nowrap">麦の窯</span><span class="site-header__brand-sub">パン工房</span></p>
+  <nav class="site-nav" aria-label="ページ内リンク">
+    <ul>
+      <li><a href="#reason">守っていること</a></li>
+      <li><a href="#process">つくり方</a></li>
+      <li><a href="#menu">本日のパン</a></li>
+      <li><a href="#info">店舗情報</a></li>
+      <li><a href="#faq">質問</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="hero-title">
+  <div class="container">
+      <p class="hero__label" lang="en">HANDMADE BAKERY — SANGENJAYA</p>
+      <h1 class="hero__title ja-display" id="hero-title" data-motion>
+        毎朝<span class="u-nowrap">5時</span>に<br class="u-br--sp">窯に火を入れ、<br class="u-br--pc">昼までに売り切れるパン。
+      </h1>
+      <p class="hero__lead ja-lead" data-motion>
+        北海道産小麦<span class="u-nowrap">100%</span>。添加物は<span class="u-nowrap">0種</span>。<br>
+        三軒茶屋の小さな工房で、焼きたてだけを売っています。
+      </p>
+      <div class="hero__actions" data-motion>
+        <a class="button" href="#menu">本日のパンを見る</a>
+        <a class="button button--ghost" href="#info">営業日を確認する</a>
+      </div>
+  </div>
+  </section>
+
+  <!-- ============ 数字 ============ -->
+  <section class="stats" aria-labelledby="stats-title">
+  <div class="container">
+      <h2 class="section-title" id="stats-title" data-motion>
+        <span class="section-title__label" lang="en">IN NUMBERS</span>
+        数字で見る<span class="u-nowrap">麦の窯</span>
+      </h2>
+      <dl class="stats__list" data-motion>
+        <div class="stats__item">
+          <dt>窯に火が入る時刻</dt>
+          <dd><span class="u-nowrap stats__num">05:00</span></dd>
+        </div>
+        <div class="stats__item">
+          <dt>小麦の産地</dt>
+          <dd><span class="u-nowrap stats__num">100%</span><span class="stats__unit">北海道産</span></dd>
+        </div>
+        <div class="stats__item">
+          <dt>添加物の使用数</dt>
+          <dd><span class="u-nowrap stats__num">0種</span></dd>
+        </div>
+        <div class="stats__item">
+          <dt>毎日焼く種類</dt>
+          <dd><span class="u-nowrap stats__num">12種</span></dd>
+        </div>
+      </dl>
+  </div>
+  </section>
+
+  <!-- ============ 理由 ============ -->
+  <section class="reason" id="reason" aria-labelledby="reason-title">
+  <div class="container">
+      <h2 class="section-title" id="reason-title" data-motion>
+        <span class="section-title__label" lang="en">WHY US</span>
+        <span class="u-nowrap">麦の窯</span>が守っていること
+      </h2>
+      <ol class="reason__list" data-motion>
+        <li class="reason__item">
+          <p class="reason__no" aria-hidden="true">01</p>
+          <h3 class="reason__heading">賞味期限のない店づくり</h3>
+          <p class="reason__body">
+            焼きたてしか売らないため、翌日の在庫がありません。売り切れたら、その日は終わります。
+            夕方の値引きセールも、冷凍在庫の再販売もしていません。
+          </p>
+        </li>
+        <li class="reason__item reason__item--reverse">
+          <p class="reason__no" aria-hidden="true">02</p>
+          <h3 class="reason__heading">小麦は北海道産だけ</h3>
+          <p class="reason__body">
+            毎日食べるものだから、小麦は銘柄から選びます。ゆめちから<span class="u-nowrap">100%</span>の食パンは
+            毎朝<span class="u-nowrap">20本</span>限定。完売後は翌朝までお待ちください。
+          </p>
+        </li>
+        <li class="reason__item">
+          <p class="reason__no" aria-hidden="true">03</p>
+          <h3 class="reason__heading">配合は水と塩と酵母まで</h3>
+          <p class="reason__body">
+            イーストフード・保存料・乳化剤を使いません。材料は小麦粉、水、塩、自家製酵母。
+            配合表は店頭とSNSで毎週公開しています。
+          </p>
+        </li>
+      </ol>
+  </div>
+  </section>
+
+  <!-- ============ 工程 ============ -->
+  <section class="process" id="process" aria-labelledby="process-title">
+  <div class="container">
+      <h2 class="section-title" id="process-title" data-motion>
+        <span class="section-title__label" lang="en">PROCESS</span>
+        パンができるまで
+      </h2>
+      <ol class="process__list" data-motion>
+        <li class="process__step">
+          <p class="process__phase"><span class="process__time u-nowrap">前日夜</span></p>
+          <h3 class="process__name">仕込み</h3>
+          <p class="process__body">粉を計量し、自家製酵母を起こします。</p>
+        </li>
+        <li class="process__step">
+          <p class="process__phase"><span class="process__time u-nowrap">当日0時</span></p>
+          <h3 class="process__name">発酵</h3>
+          <p class="process__body">低温で約12時間。時間をかけると小麦の甘さが出ます。</p>
+        </li>
+        <li class="process__step">
+          <p class="process__phase"><span class="process__time u-nowrap">早朝5時</span></p>
+          <h3 class="process__name">焼成</h3>
+          <p class="process__body">直火の石窯で一気に焼き上げます。</p>
+        </li>
+        <li class="process__step">
+          <p class="process__phase"><span class="process__time u-nowrap">8時〜</span></p>
+          <h3 class="process__name">販売</h3>
+          <p class="process__body">窯から出した順に店頭へ。売り切れ次第閉店です。</p>
+        </li>
+      </ol>
+  </div>
+  </section>
+
+  <!-- ============ 本日のパン ============ -->
+  <section class="menu" id="menu" aria-labelledby="menu-title">
+  <div class="container">
+      <h2 class="section-title" id="menu-title" data-motion>
+        <span class="section-title__label" lang="en">TODAY'S MENU</span>
+        本日のパンと価格
+      </h2>
+      <p class="menu__note">価格は2026年8月時点。仕入れにより変わることがあります。</p>
+      <table class="menu__table" data-motion>
+        <caption class="visually-hidden">本日のパンの品目と価格</caption>
+        <thead>
+          <tr><th scope="col">品目</th><th scope="col">説明</th><th scope="col" class="menu__price-col">価格</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">ゆめちから食パン</th>
+            <td>毎朝<span class="u-nowrap">20本</span>限定。山型、角食どちらも同価格。</td>
+            <td class="menu__price"><span class="u-nowrap">¥900</span></td>
+          </tr>
+          <tr>
+            <th scope="row">ライ麦レーズン</th>
+            <td>ライ麦<span class="u-nowrap">40%</span>。レーズンはノンオイル。</td>
+            <td class="menu__price"><span class="u-nowrap">¥780</span></td>
+          </tr>
+          <tr>
+            <th scope="row">バタール</th>
+            <td>水分を多めにし、中はしっとり。当日食べきりサイズ。</td>
+            <td class="menu__price"><span class="u-nowrap">¥260</span></td>
+          </tr>
+          <tr>
+            <th scope="row">全粒粉ベーグル</th>
+            <td>全粒粉<span class="u-nowrap">50%</span>。素焼きの胡桃入り。</td>
+            <td class="menu__price"><span class="u-nowrap">¥280</span></td>
+          </tr>
+          <tr>
+            <th scope="row">チャバッタ ハーフ</th>
+            <td>夕食の副食向け。スープに合う薄口の塊。</td>
+            <td class="menu__price"><span class="u-nowrap">¥340</span></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  </section>
+
+  <!-- ============ 店舗情報 ============ -->
+  <section class="info" id="info" aria-labelledby="info-title">
+  <div class="container">
+      <h2 class="section-title" id="info-title" data-motion>
+        <span class="section-title__label" lang="en">INFORMATION</span>
+        店舗情報
+      </h2>
+      <dl class="info__list" data-motion>
+        <div class="info__row">
+          <dt>営業日</dt>
+          <dd>火・水・土・日</dd>
+        </div>
+        <div class="info__row">
+          <dt>営業時間</dt>
+          <dd><span class="u-nowrap">8:00</span>〜売り切れまで(平均<span class="u-nowrap">13:00</span>頃)</dd>
+        </div>
+        <div class="info__row">
+          <dt>定休日</dt>
+          <dd>月・木・金</dd>
+        </div>
+        <div class="info__row">
+          <dt>住所</dt>
+          <dd>東京都世田谷区三軒茶屋◯-◯-◯<!-- 差し替え: 実際の住所 --></dd>
+        </div>
+        <div class="info__row">
+          <dt>アクセス</dt>
+          <dd>東急田園都市線 三軒茶屋駅から徒歩<span class="u-nowrap">5分</span></dd>
+        </div>
+        <div class="info__row">
+          <dt>予約</dt>
+          <dd>前日までにInstagramのDMまたは店頭で承ります。</dd>
+        </div>
+      </dl>
+  </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+      <h2 class="section-title" id="faq-title" data-motion>
+        <span class="section-title__label" lang="en">FAQ</span>
+        よくある質問
+      </h2>
+      <div class="faq__list" data-motion>
+        <details class="faq__item">
+          <summary class="faq__question">完売したら買えませんか?</summary>
+          <div class="faq__answer">
+            <p>申し訳ありません。焼きたてしか売らないため、完売後は翌営業日になります。X(旧Twitter)で残数を毎朝8時に配信しています。</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question">予約はできますか?</summary>
+          <div class="faq__answer">
+            <p>前日までなら承ります。InstagramのDMか店頭でご注文ください。食パンは毎朝20本限定のため、週末は早めのご連絡をおすすめします。</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question">アレルギー表示はありますか?</summary>
+          <div class="faq__answer">
+            <p>使用材料の配合表を店頭に掲示し、SNSでも公開しています。特定原材料7品目の使用有無は各商品タグにも記載しています。</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question">ギフト用の包装はできますか?</summary>
+          <div class="faq__answer">
+            <p>箱詰めは3,000円以上のご注文で承ります。包装紙の在庫状況により対応できない日もあるため、事前にご相談ください。</p>
+          </div>
+        </details>
+      </div>
+  </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta" aria-labelledby="cta-title">
+  <div class="container">
+      <h2 class="cta__title ja-display" id="cta-title">土日の朝<span class="u-nowrap">8時</span>、窯の前で会いましょう。</h2>
+      <a class="button button--large" href="#info">営業日・営業時間を確認する</a>
+  </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="site-footer__brand"><span class="u-nowrap">麦の窯</span></p>
+  <p class="site-footer__legal"><small>&copy; 2026 Muginokama Bakery. All rights reserved.</small></p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
